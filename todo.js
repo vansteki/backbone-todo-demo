@@ -16,7 +16,7 @@ var PlanView = Backbone.View.extend({
 		var attr = this.model.toJSON();
 		this.$el.html(this.template(attr));
 		/* use x-editable after view rendered you can render here or in collection later*/
-		var self = this;
+		//var self = this;
 		this.$el.find('h3').editable().on('save', function(e,params){
 			console.log('x-editable.save', this, params.newValue);
 			self.model.set({'name': params.newValue}, {silent: true});

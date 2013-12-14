@@ -2,6 +2,18 @@
 
 A Backbone + express + redis todo demo
 
+front end:
+>- Backbone.js
+>- Bootstrap
+>- jQuery
+>- x-editable
+
+back end:
+>- express
+>- Redis
+
+it's just for demo purpose, no security layer for both front and back end.
+
 #Usage
 
 1.install [Redis](http://redis.io/) first and run it!

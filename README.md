@@ -25,10 +25,14 @@ it's just for demo purpose, no security layer for both front and back end.
 
 3.
 
+    node api.js
+
+4.
+
     http://localhost:403/reset   //it will generate some data in redis
   
 
-4.
+5.
 
     http://localhost/todo.html   //if success, you will see a list
     

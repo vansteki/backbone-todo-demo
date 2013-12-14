@@ -57,7 +57,7 @@ var PlanListView = Backbone.View.extend({
 		//when model added or render , check if this model has default id if not add cid as temp id	
 		if (plan.id == undefined){
 			plan.save();	//send post to server, when server response back json {'id':newId, 'name': '...'}, it will set a newId to corresponding model 
-			plan.set({id: plan.cid});
+			plan.set({id: plan.cid}); //if you sitch this and above line , you'll find backbone send PUT instead of POST
 		}
 		var planView = new PlanView({model: plan}); //console.log( planView.render().el);
 		this.$el.append(planView.render().el);

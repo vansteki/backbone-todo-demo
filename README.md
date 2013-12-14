@@ -31,7 +31,7 @@ it's just for demo purpose, no security layer for both front and back end.
 
 4.set db
 
-    http://localhost:403/reset   //it will generate initial sample data in redis
+    http://localhost:403/reset   //it will generate initial sample data in redis, if success, you will see 'done'
   
 
 5.enjoy

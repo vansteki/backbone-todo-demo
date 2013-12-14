@@ -16,11 +16,11 @@ var PlanView = Backbone.View.extend({
 		this.$el.html(this.template(attr));
 		//use x-editable
 		this.$el.find('h3').editable().on('save', function(e,params){
-			console.log('x-editable.save', this, params.newValue);
+			//console.log('x-editable.save', this, params.newValue);
 			self.model.set({'name': params.newValue}, {silent: true});
 			self.model.save();
 		});
-		console.log('sigle model render!',this.model.toJSON());
+		//console.log('sigle model render!',this.model.toJSON());
 		return this;
 	},
 	del: function(e){
@@ -54,7 +54,7 @@ var PlanListView = Backbone.View.extend({
 	},
 	addOne: function(plan) {
 		console.log(plan);
-		//when model added or render , check if this model has default id if not add id as cid	
+		//when model added or render , check if this model has default id if not add cid as temp id	
 		if (plan.id == undefined){
 			plan.save();	//send post to server, when server response back json {'id':newId, 'name': '...'}, it will set a newId to corresponding model 
 			plan.set({id: plan.cid});

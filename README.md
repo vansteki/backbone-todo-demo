@@ -18,21 +18,23 @@ it's just for demo purpose, no security layer for both front and back end.
 
 1.install [Redis](http://redis.io/) first and run it!
 
-2.
+    redis-server
+
+2.install module 
 
     cd backbone-todo-demo/
     npm install
 
-3.
+3.start express api
 
     node api.js
 
-4.
+4.set db
 
-    http://localhost:403/reset   //it will generate some data in redis
+    http://localhost:403/reset   //it will generate initial sample data in redis
   
 
-5.
+5.enjoy
 
     http://localhost/todo.html   //if success, you will see a list
     

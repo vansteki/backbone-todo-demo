@@ -20,7 +20,7 @@ it's just for demo purpose, no security layer for both front and back end.
 
 2.
 
-    cd backbone_todo_demo/
+    cd backbone-todo-demo/
     npm install
 
 3.

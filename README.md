@@ -4,7 +4,7 @@ A Backbone + express + redis todo demo
 
 #Usage
 
-1.install Redis first and run it!
+1.install [Redis](http://redis.io/) first and run it!
 
 2.
 

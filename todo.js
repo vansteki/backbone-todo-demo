@@ -12,11 +12,9 @@ var PlanView = Backbone.View.extend({
 	},
 	template: _.template(planDom),
 	render: function(){	
-		// alert('single plan model rendered!');	
 		var attr = this.model.toJSON();
 		this.$el.html(this.template(attr));
-		/* use x-editable after view rendered you can render here or in collection later*/
-		//var self = this;
+		//use x-editable
 		this.$el.find('h3').editable().on('save', function(e,params){
 			console.log('x-editable.save', this, params.newValue);
 			self.model.set({'name': params.newValue}, {silent: true});
@@ -61,7 +59,6 @@ var PlanListView = Backbone.View.extend({
 			plan.save();	//send post to server, when server response back json {'id':newId, 'name': '...'}, it will set a newId to corresponding model 
 			plan.set({id: plan.cid});
 		}
-		// console.log('each plan model:', plan, plan.id, plan.cid);
 		var planView = new PlanView({model: plan}); //console.log( planView.render().el);
 		this.$el.append(planView.render().el);
 	},

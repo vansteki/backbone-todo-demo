@@ -1,0 +1,11 @@
+{
+  "name": "backbone_todo_demo",
+  "version": "0.1.0",
+  "description": "backbone + redis todo demo",
+  "author": "vansteki <vansteki.tw@gmail.com.com>",
+  "dependencies": {
+    "express": ">=3.4.2",
+    "redis": ">=0.9.0"
+  },
+  "engine": "node 0.10.x"
+}
